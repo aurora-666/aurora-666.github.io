@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Aurora_Sky&#39;s Nuclear Lab</title>
+    <title>Aurora_Skyの屑博客</title>
     <link>https://aurora.114514.press/</link>
-    <description>Recent content on Aurora_Sky&#39;s Nuclear Lab</description>
+    <description>Recent content on Aurora_Skyの屑博客</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>zh-cn</language>
-    <copyright>Powered by Hugo | Hosted by GitHub</copyright>
+    <copyright>Hosted by GitHub</copyright>
     <lastBuildDate>Sat, 02 May 2020 19:31:32 +0800</lastBuildDate>
     
 	<atom:link href="https://aurora.114514.press/index.xml" rel="self" type="application/rss+xml" />
