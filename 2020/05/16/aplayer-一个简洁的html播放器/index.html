@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+    
+    
+        <meta name="twitter:card" content="summary"/>
+    
+
+
+
+<meta name="twitter:title" content="APlayer - 一个简洁的HTML播放器"/>
+<meta name="twitter:description" content=""/>
+<meta name="twitter:site" content="@"/>
+
+
+
+  	<meta property="og:title" content="APlayer - 一个简洁的HTML播放器 &middot; Aurora_Skyの屑博客" />
+  	<meta property="og:site_name" content="Aurora_Skyの屑博客" />
+  	<meta property="og:url" content="https://aurora.114514.press/2020/05/16/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8/" />
+
+    
+        
+            <meta property="og:image" content="http://cdn.jsdelivr.net/gh/aurora-666/aurora-666.github.io/images/background.png"/>
+        
+    
+
+    
+    <meta property="og:description" content="" />
+  	<meta property="og:type" content="article" />
+    <meta property="article:published_time" content="2020-05-16T17:13:49&#43;08:00" />
+
+    
+    
+
+    <title>APlayer - 一个简洁的HTML播放器 &middot; Aurora_Skyの屑博客</title>
+
+    
+    <meta name="description" content="上次在emlog插件中心闲逛的时候，
+无意间看到一个叫APlayer的播放器插件，并追到了它的临时官网
+ 下载源码 用npm下载：
+npm install aplayer --save  用Yarn下载：
+yarn add aplayer   来自官网的Quick Start HTML:
+&amp;lt;link rel=&amp;#" />
+    
+
+    <meta name="HandheldFriendly" content="True" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="shortcut icon" href="https://aurora.114514.press/images/favicon.ico">
+	  <link rel="apple-touch-icon" href="https://aurora.114514.press/images/apple-touch-icon.png" />
+
+    <link rel="stylesheet" type="text/css" href="https://aurora.114514.press/css/screen.css" />
+    <link rel="stylesheet" type="text/css" href="https://aurora.114514.press/css/nav.css" />
+
+    
+
+    
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/atom-one-light.min.css">
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+        
+        <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+      
+          <link href="https://aurora.114514.press/index.xml" rel="alternate" type="application/rss+xml" title="Aurora_Skyの屑博客" />
+      
+      
+    
+    <meta name="generator" content="Hugo 0.69.2" />
+
+    <link rel="canonical" href="https://aurora.114514.press/2020/05/16/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8/" />
+
+    
+      
+    
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "publisher": {
+        "@type": "Organization",
+        "name":  null ,
+        "logo": "https://aurora.114514.press/http://cdn.jsdelivr.net/gh/aurora-666/aurora-666.github.io/images/avatar.jpg"
+    },
+    "author": {
+        "@type": "Person",
+        "name":  null ,
+        
+        "image": {
+            "@type": "ImageObject",
+            "url": "https://aurora.114514.press/http://cdn.jsdelivr.net/gh/aurora-666/aurora-666.github.io/images/avatar.jpg",
+            "width": 250,
+            "height": 250
+        }, 
+        
+        "url": "aurorasky.site",
+        "sameAs": [
+            
+            
+             
+             
+             
+             
+             
+            
+        ],
+        "description": "Every man dies, not every man really lives."
+        
+    },
+    "headline": "APlayer - 一个简洁的HTML播放器",
+    "name": "APlayer - 一个简洁的HTML播放器",
+    "wordCount":  120 ,
+    "timeRequired": "PT1M",
+    "inLanguage": {
+      "@type": "Language",
+      "alternateName": "en"
+    },
+    "url": "https://aurora.114514.press/2020/05/16/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8/",
+    "datePublished": "2020-05-16T17:13Z",
+    "dateModified": "2020-05-16T17:13Z",
+    
+    
+    "description": "",
+    "mainEntityOfPage": {
+        "@type": "WebPage",
+        "@id": "https://aurora.114514.press/2020/05/16/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8/"
+    }
+}
+    </script>
+    
+
+
+    
+
+    
+
+    
+</head>
+<body class="nav-closed">
+
+  <div class="nav">
+    <h3 class="nav-title">快捷菜单</h3>
+    <a href="#" class="nav-close">
+        <span class="hidden">关闭</span>
+    </a>
+    <ul>
+        
+        
+        
+            
+            <li class="nav-opened" role="presentation">
+            	<a href="https://aurora.114514.press/">首页</a>
+            </li>
+        
+        
+    </ul>
+
+    
+    <a class="subscribe-button icon-feed" href="https://aurora.114514.press/index.xml">订阅</a>
+    
+</div>
+<span class="nav-cover"></span>
+
+
+ <div class="site-wrapper">
+
+
+
+<header class="main-header post-head no-cover">
+  <nav class="main-nav clearfix">
+
+
+  
+      <a class="blog-logo" href="https://aurora.114514.press/"><img src="http://cdn.jsdelivr.net/gh/aurora-666/aurora-666.github.io/images/avatar.jpg" alt="Home" /></a>
+  
+  
+      <a class="menu-button" href="#"><span class="burger">&#9776;</span><span class="word">快捷菜单</span></a>
+  
+  </nav>
+</header>
+
+
+
+<main class="content" role="main">
+
+
+
+
+  <article class="post post">
+
+    <header class="post-header">
+        <h1 class="post-title">APlayer - 一个简洁的HTML播放器</h1>
+        <small></small>
+
+        <section class="post-meta">
+        
+          <time class="post-date" datetime="2020-05-16T17:13:49&#43;08:00">
+            May 16, 2020
+          </time>
+        
+         
+        </section>
+    </header>
+
+    <section class="post-content">
+      <p>上次在emlog插件中心闲逛的时候，</p>
+<p>无意间看到一个叫APlayer的播放器插件，并追到了它的<a href="http://aplayer.js.org">临时官网</a></p>
+<hr>
+<h3 id="下载源码">下载源码</h3>
+<p>用npm下载：</p>
+<pre><code>npm install aplayer --save
+</code></pre>
+<p>用Yarn下载：</p>
+<pre><code>yarn add aplayer
+</code></pre>
+<hr>
+<h3 id="来自官网的quick-start">来自官网的Quick Start</h3>
+<p>HTML:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-html" data-lang="html">&lt;<span style="color:#f92672">link</span> <span style="color:#a6e22e">rel</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;stylesheet&#34;</span> <span style="color:#a6e22e">href</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;APlayer.min.css&#34;</span>&gt;
+&lt;<span style="color:#f92672">div</span> <span style="color:#a6e22e">id</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;aplayer&#34;</span>&gt;&lt;/<span style="color:#f92672">div</span>&gt;
+&lt;<span style="color:#f92672">script</span> <span style="color:#a6e22e">src</span><span style="color:#f92672">=</span><span style="color:#e6db74">&#34;APlayer.min.js&#34;</span>&gt;&lt;/<span style="color:#f92672">script</span>&gt;
+</code></pre></div><p>Javascript:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-javascript" data-lang="javascript"><span style="color:#66d9ef">const</span> <span style="color:#a6e22e">ap</span> <span style="color:#f92672">=</span> <span style="color:#66d9ef">new</span> <span style="color:#a6e22e">APlayer</span>({
+    <span style="color:#a6e22e">container</span><span style="color:#f92672">:</span> document.<span style="color:#a6e22e">getElementById</span>(<span style="color:#e6db74">&#39;aplayer&#39;</span>),
+    <span style="color:#a6e22e">audio</span><span style="color:#f92672">:</span> [{
+        <span style="color:#a6e22e">name</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;name&#39;</span>,
+        <span style="color:#a6e22e">artist</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;artist&#39;</span>,
+        <span style="color:#a6e22e">url</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;url.mp3&#39;</span>,
+        <span style="color:#a6e22e">cover</span><span style="color:#f92672">:</span> <span style="color:#e6db74">&#39;cover.jpg&#39;</span>
+    }]
+});
+</code></pre></div><p>Work with module bundler:</p>
+<pre><code>import 'aplayer/dist/APlayer.min.css';
+import APlayer from 'aplayer';
+
+const ap = new APlayer(options);
+</code></pre><p>一个萌萌的example：</p>
+<pre><code>const ap = new APlayer({
+    container: document.getElementById('player'),
+    mini: false,
+    autoplay: false,
+    theme: '#FADFA3',
+    loop: 'all',
+    order: 'random',
+    preload: 'auto',
+    volume: 0.7,
+    mutex: true,
+    listFolded: false,
+    listMaxHeight: 90,
+    lrcType: 3,
+    audio: [
+        {
+            name: 'name1',
+            artist: 'artist1',
+            url: 'url1.mp3',
+            cover: 'cover1.jpg',
+            lrc: 'lrc1.lrc',
+            theme: '#ebd0c2'
+        },
+        {
+            name: 'name2',
+            artist: 'artist2',
+            url: 'url2.mp3',
+            cover: 'cover2.jpg',
+            lrc: 'lrc2.lrc',
+            theme: '#46718b'
+        }
+    ]
+});
+</code></pre><p><strong>更多信息参考<a href="http://aplayer.js.org/#/home">doc文档</a></strong></p>
+
+    </section>
+
+
+  <footer class="post-footer">
+
+
+    
+
+
+
+
+
+
+
+
+<figure class="author-image">
+    <a class="img" href="https://aurora.114514.press/" style="background-image: url(http://cdn.jsdelivr.net/gh/aurora-666/aurora-666.github.io/images/avatar.jpg)"><span class="hidden">Aurora_Sky的图片</span></a>
+</figure>
+
+
+<section class="author">
+  <h4><a href="https://aurora.114514.press/">Aurora_Sky</a></h4>
+  
+  <p>Every man dies, not every man really lives.</p>
+  
+  <div class="author-meta">
+    <span class="author-location icon-location">Zhenjiang, China</span>
+    <span class="author-link icon-link"><a href="aurorasky.site">aurorasky.site</a></span>
+  </div>
+</section>
+
+
+
+
+    
+<section class="share">
+  <h4>Share this post</h4>
+  <a class="icon-twitter" style="font-size: 1.4em" href="https://twitter.com/share?text=APlayer%20-%20%e4%b8%80%e4%b8%aa%e7%ae%80%e6%b4%81%e7%9a%84HTML%e6%92%ad%e6%94%be%e5%99%a8&nbsp;-&nbsp;Aurora_Sky%e3%81%ae%e5%b1%91%e5%8d%9a%e5%ae%a2&amp;url=https%3a%2f%2faurora.114514.press%2f2020%2f05%2f16%2faplayer-%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E6%25B4%2581%25E7%259A%2584html%25E6%2592%25AD%25E6%2594%25BE%25E5%2599%25A8%2f"
+      onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+      <span class="hidden">Twitter</span>
+  </a>
+  <a class="icon-facebook" style="font-size: 1.4em" href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2faurora.114514.press%2f2020%2f05%2f16%2faplayer-%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E6%25B4%2581%25E7%259A%2584html%25E6%2592%25AD%25E6%2594%25BE%25E5%2599%25A8%2f"
+      onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+      <span class="hidden">Facebook</span>
+  </a>
+  <a class="icon-pinterest" style="font-size: 1.4em" href="http://pinterest.com/pin/create/button/?url=https%3a%2f%2faurora.114514.press%2f2020%2f05%2f16%2faplayer-%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E6%25B4%2581%25E7%259A%2584html%25E6%2592%25AD%25E6%2594%25BE%25E5%2599%25A8%2f&amp;description=APlayer%20-%20%e4%b8%80%e4%b8%aa%e7%ae%80%e6%b4%81%e7%9a%84HTML%e6%92%ad%e6%94%be%e5%99%a8"
+      onclick="window.open(this.href, 'pinterest-share','width=580,height=296');return false;">
+      <span class="hidden">Pinterest</span>
+  </a>
+  <a class="icon-google-plus" style="font-size: 1.4em" href="https://plus.google.com/share?url=https%3a%2f%2faurora.114514.press%2f2020%2f05%2f16%2faplayer-%25E4%25B8%2580%25E4%25B8%25AA%25E7%25AE%2580%25E6%25B4%2581%25E7%259A%2584html%25E6%2592%25AD%25E6%2594%25BE%25E5%2599%25A8%2f"
+     onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+      <span class="hidden">Google+</span>
+  </a>
+</section>
+
+
+
+    
+
+<div id="disqus_thread"></div>
+<script>
+
+
+
+
+var disqus_config = function () {
+this.page.url = "https:\/\/aurora.114514.press\/2020\/05\/16\/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8\/";  
+this.page.identifier = "https:\/\/aurora.114514.press\/2020\/05\/16\/aplayer-%E4%B8%80%E4%B8%AA%E7%AE%80%E6%B4%81%E7%9A%84html%E6%92%AD%E6%94%BE%E5%99%A8\/"; 
+};
+
+(function() { 
+var d = document, s = d.createElement('script');
+s.src = 'https://aurorasky.disqus.com/embed.js';
+s.setAttribute('data-timestamp', +new Date());
+(d.head || d.body).appendChild(s);
+})();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+
+
+
+
+
+
+
+
+  </footer>
+</article>
+
+</main>
+
+
+  <aside class="read-next">
+  
+  
+      <a class="read-next-story prev" style="no-cover" href="https://aurora.114514.press/2020/05/02/%E8%87%AD%E6%B5%8B%E8%AF%95/">
+          <section class="post">
+              <h2>臭测试</h2>
+          </section>
+      </a>
+  
+</aside>
+
+
+
+    <footer class="site-footer clearfix">
+        <section class="copyright"><a href="">Aurora_Skyの屑博客</a> Hosted by GitHub</section>
+        
+        <section class="poweredby">Proudly generated by <a class="icon-hugo" href="http://gohugo.io">HUGO</a>, with <a class="icon-theme" href="https://github.com/vjeantet/hugo-theme-casper">Casper</a> theme</section>
+        
+    </footer>
+    </div>
+    <script type="text/javascript" src="https://aurora.114514.press/js/jquery.js"></script>
+    <script type="text/javascript" src="https://aurora.114514.press/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="https://aurora.114514.press/js/index.js"></script>
+    
+</body>
+</html>
+
